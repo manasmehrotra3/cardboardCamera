@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Cardboard Camera</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="manifest.json" rel="manifest">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="fs-button">Cardboard Camera</div>
+    <div id="info">
+      <h1>Cardboard Vision</h1>
+
+      <div id="cam-sec" class="sec">
+        <div id="vid-select" class="select">
+          <select id="videoSource"></select>
+          <input type="button" id="toggle-play" value="&#9658;">
+        </div>
+      </div>
+
+      <div id="fov-sec" class="sec">
+        <h3>FOV <span id="fov"></span></h3>
+        <input id="fov-select" type="range" value="60" min="20" max="130" step="5">
+      </div>
+
+      <div id="filter-sec" class="sec">
+      <div id="filter-value"></div>
+
+      <h3>filters</h3>
+      <input type="button" id="random-mode" value="random cycle">
+      <div id="color-cubes">
+        <div>default</div>
+        <div>monochrome</div>
+        <div>sepia</div>
+        <div>saturated</div>
+        <div>posterize</div>
+        <div>inverse</div>
+        <div>color-negative</div>
+        <div>high-contrast-bw</div>
+        <div>funky-contrast</div>
+        <div>nightvision</div>
+        <div>thermal</div>
+        <div>black-white</div>
+        <div>hue-plus-60</div>
+        <div>hue-plus-180</div>
+        <div>hue-minus-60</div>
+        <div>red-to-cyan</div>
+        <div>blues</div>
+        <div>infrared</div>
+        <div>radioactive</div>
+        <div>goolgey</div>
+        <div>bgy</div>
+      </div>
+      </div>
+
+      <div id="capture-sec">
+        <canvas id="snapshot" width="320" height="240"></canvas>
+        <input type="button" id="capture-btn" value="capture">
+      </div>
+
+    </div>
+
+    <div id="canvas"></div>
+
+    <canvas id="vid-canvas" width="320" height="240" style="display:none"></canvas>
+    <canvas id="debug" width="320" height="240" style="position: absolute; display: none"></canvas>
+
+  <script src="js/third-party/lodash.min.js"></script>
+  <script src="js/third-party/jquery.min.js"></script>
+  <script src="js/third-party/threejs/three.min.js"></script>
+  <script src="js/third-party/threejs/VREffect.js"></script>
+  <script src="js/third-party/threejs/VRControls.js"></script>
+  <script src="js/third-party/threejs/StereoEffect.js"></script>
+  <script src="js/third-party/threejs/DeviceOrientationControls.js"></script>  
+  <script src="js/third-party/threejs/EffectComposer.js"></script>
+  <script src="js/third-party/threejs/MaskPass.js"></script>
+  <script src="js/third-party/threejs/RenderPass.js"></script>
+  <script src="js/third-party/threejs/ShaderPass.js"></script>
+  <script src="js/third-party/threejs/CopyShader.js"></script>
+  <script src="js/third-party/threex.coloradjust.js"></script>
+  <script src="js/third-party/threex.webcamtexture.js"></script>
+  <script src="js/third-party/headtrackr.js"></script>
+
+  <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+
+  <script src="js/main.js"></script>
+  </body>
+</html>

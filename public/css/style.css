@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#fs-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px;
+  color: #fff;
+  background-color: #555;
+  z-index: 100;
+}
+
+#fs-button:hover {
+  cursor: pointer;
+  background-color: #777;
+}
+
+#fs-button.error {
+  pointer-events: none;
+  background-color: red;
+}
+
+#info {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background-color: #eee;
+}
+
+input[type=button], select {
+  width: 100%;
+  font-size: 16px;
+}
+
+#videoSource {
+  width: 73%;
+}
+
+#toggle-play {
+  width: 24%;
+}
+
+#fov-select {
+  width: 100%;
+}
+
+#fov {
+  float: right;
+}
+
+#random-mode {
+  margin-bottom: 4px;
+}
+
+#filter-value {
+  display: none;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 12px;
+}
+
+#color-cubes {
+
+}
+#color-cubes div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0px 3px;
+  color: #333;
+  font-size: 15px;
+}
+
+#color-cubes div:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+#color-cubes div.selected {
+  background-color: rgba(255,255,255,0.95);
+}
+
+#capture-sec {
+  display: none;
+}
+
+#credits {
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0px 0px 0px -8px;
+  text-align: center;
+  width: 100%;
+  background-color: #eee;
+  padding: 7px;
+  display: none;
+}
+
+#credits a {
+  color: #222;
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #222;
+}

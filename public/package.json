@@ -1,0 +1,23 @@
+{
+  "name": "cardboardCamera",
+  "version": "0.0.0",
+  "description": "Cardboard App for Camera",
+  "main": "index.html",
+  "author": "manasmehrotra",
+  "license": "Accenture",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "express": "^4.6.1",
+    "lodash": "^2.4.1",
+    "node-uuid": "^1.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "matchdep": "~0.3.0"
+  }
+}
